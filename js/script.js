@@ -6,6 +6,14 @@ new Swiper('.swiper-container', {
         disableOnInteraction: false,
     },
     speed: 500,
+    navigation:{
+        nextEl: ('.swiper-button-next'),
+        prevEl: ('.swiper-button-prev'),
+    },
+    pagination:{
+        el: ('.swiper-pagination2'),
+        clickable: true,
+    },
 });
 const mobileMenuButton = document.querySelectorAll('.menu__mobile');
 const modal = document.querySelector('.modal__window__container');
