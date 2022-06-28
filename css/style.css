@@ -98,6 +98,7 @@ body{
     display: flex;
     justify-content: space-between;
     min-height: 80px;
+    max-width: 1315px;
     width: 100%;
 }
 .header__logo {
@@ -295,8 +296,8 @@ body{
 	visibility: hidden;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
-.slider{
-    max-width: 1295px;
+.slider {
+    max-width: 1315px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -389,11 +390,13 @@ body{
     color:#000;
     pointer-events: auto;
     padding-left: 15px;
+    transition: all 0.5s ease;
 }
 .swiper-button-next {
     color:#000;
     padding-right: 15px;
     pointer-events: auto;
+    transition: all 0.5s ease;
 }
 .swiper-controls{
     position: absolute;
@@ -405,13 +408,24 @@ body{
     z-index: 999;
     justify-content: space-between;
 }
+
 .swiper-button-next:after{
     font-family: swiper-icons;
     font-size: 24px;
+    transition: all 0.5s ease;
 }
 .swiper-button-prev:after{
     font-family: swiper-icons;
     font-size: 24px;
+    transition: all 0.5s ease;
+}
+.swiper-button-next:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+}
+.swiper-button-prev:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.2);
 }
 .slider-pagination {
     position: absolute;
@@ -667,6 +681,280 @@ body{
     .slider__image {
         padding-left: 20px;
     }
+}
+.offers {
+    max-width: 1315px;
+    padding: 0 15px 6px 15px;
+    margin: 30px auto;
+}
+.offers__wrapper {
+    max-width: 1315px;
+}
+.offers__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 28px 28px 55px 28px;
+    text-align: center;
+    justify-content: center;
+}
+.text__offers__header {
+    font-family: 'Readex Pro';
+    font-size: 42px;
+    padding-bottom: 4.5px;
+}
+.text__offers__title {
+    font-family: 'Readex Pro';
+    padding-top: 4.5px;
+    font-size: 14px;
+}
+.offers__items {
+    display: flex;
+    justify-content: space-between;
+}
+.items__left {
+    height: 100%;
+    flex: 0 1 50%;
+    width: 100%;
+    margin: 0 8px 0 0;
+}
+.items__laptop {
+    height: 100%;
+    width: 100%;
+    max-width: 639px;
+    max-height: 472px;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease;
+}
+.items__laptop:hover{
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+.laptop__img{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.laptop__image {
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    max-height: 377px;
+}
+
+.laptop__text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+    padding: 0 42px;
+}
+.laptop__name {
+    font-family: 'Inter';
+    font-size: 15px;
+    transition: all 0.5s ease;
+    color:#000;
+}
+.laptop__description {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color:#000;
+    text-align: right;
+    transition: all 0.5s ease;
+}
+.laptop__name:hover {
+    color:#D81946;
+    transition: all 0.5s ease;
+}
+.laptop__description:hover {
+    transition: all 0.5s ease;
+    color:#ac0028;
+}
+.items__watch {
+    height: 100%;
+    width: 100%;
+    margin-top: 72px;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 639px;
+    transition: all 0.5s ease;
+}
+.items__watch:hover {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+.watch__container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 42px;
+}
+.watch__img{
+
+}
+.watch__image {
+    height: 100%;
+    width: 100%;
+}
+.watch__text{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.watch__name {
+    font-family: 'Inter';
+    font-size: 15px;
+    transition: all 0.5s ease;
+    color:#000;
+}
+.watch__description {
+    font-family: 'Readex Pro';
+    font-weight: 400;
+    font-size: 32px;
+    color:#000;
+    line-height: 120%;
+    transition: all 0.5s ease;
+}
+.watch__name:hover {
+    color:#D81946;
+    transition: all 0.5s ease;
+}
+.watch__description:hover {
+    transition: all 0.5s ease;
+    color:#ac0028;
+}
+.items__right {
+    display: flex;
+    flex: 0 1 50%;
+    width: 100%;
+    height: 100%;
+    max-height: 792px;
+}
+.items__phones {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    padding: 25% 0px;
+    margin: 0 8px;
+    max-height: 792px;
+    transition: all 0.5s ease;
+}
+.items__phones:hover {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+.phones {
+}
+.phones__img{
+    height: 100%;
+    width: 100%;
+}
+.phones__image {
+    height: 100%;
+    width: 100%;
+    max-width: 307.25px;
+    max-height: 367px;
+    padding-left: 16px;
+}
+.phones__text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.phones__name {
+    padding-top: 42px;
+    font-family: 'Inter';
+    color:#000;
+    transition: all 0.5s ease;
+    font-size: 15px;
+}
+.phones__description {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    color:#000;
+    font-size: 32px;
+    line-height: 120%;
+    transition: all 0.5s ease;
+}
+.phones__name:hover {
+    color:#D81946;
+    transition: all 0.5s ease;
+}
+.phones__description:hover {
+    transition: all 0.5s ease;
+    color:#ac0028;
+}
+.items__tablet {
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+    margin-left: 8px;
+    width: 100%;
+    height: 100%;
+    padding: 25% 0px;
+    max-height: 792px;
+    transition: all 0.5s ease;
+}
+.items__tablet:hover {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+.tablet {
+}
+.tablet__text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.tablet__name {
+    font-family: 'Inter';
+    font-size: 16px;
+    color:#000;
+    transition: all 0.5s ease;
+}
+.tablet__description {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color:#000;
+    padding-bottom: 42px;
+    transition: all 0.5s ease;
+}
+.tablet__name:hover {
+    color:#D81946;
+    transition: all 0.5s ease;
+}
+.tablet__description:hover {
+    transition: all 0.5s ease;
+    color:#ac0028;
+}
+.tablet__img{
+    height: 100%;
+    width: 100%;
+}
+.tablet__image {
+    height: 100%;
+    width: 100%;
+    max-width: 312px;
+    max-height: 425px;
 }
 .footer {
 }
