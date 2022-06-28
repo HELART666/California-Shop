@@ -289,6 +289,7 @@ body{
 .hidden{
     opacity: 0;
 	visibility: hidden;
+    transition: all 0.3s ease 0s;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 .hidden__list{
@@ -406,6 +407,7 @@ body{
     width: 100%;
     left: 0;
     z-index: 999;
+    transition: all 0.3s ease 0s;
     justify-content: space-between;
 }
 
@@ -846,7 +848,7 @@ body{
     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 100%;
-    padding: 25% 0px;
+    padding: 25.35% 0px;
     margin: 0 8px;
     max-height: 792px;
     transition: all 0.5s ease;
@@ -955,6 +957,91 @@ body{
     width: 100%;
     max-width: 312px;
     max-height: 425px;
+}
+@media (max-width: 1226px) {
+    .items__phones {
+        padding: 25.5% 0px;
+    }
+}
+@media (max-width: 1150px) {
+    .phones__description{
+        padding: 0 30px;
+    }
+    .tablet__description{
+        padding: 0 30px 42px 30px;
+    }
+}
+@media (max-width: 1050px) {
+    .items__phones{
+        padding: 25.95% 0px;
+    }
+}
+@media (max-width: 900px) {
+    .items__phones{
+        padding: 26.5% 0px;
+    }
+    .phones__description{
+        padding: 0 15px;
+    }
+    .laptop__img{
+        padding-right: 30px;
+    }
+    .items__phones {
+        min-width: 170px;
+    }
+    .laptop__text{
+        padding-right: 30px;
+    }
+    .laptop__description{
+        font-size: 24px;
+    }
+    .watch__description{
+        font-size: 24px;
+    }
+    .phones__description{
+        font-size: 24px;
+    }
+    .tablet__description{
+        font-size: 24px;
+    }
+    .watch__container{
+        padding-right: 30px;
+    }
+}
+@media (max-width: 726.98px) {
+    .offers {
+        max-width: 1315px;
+        padding: 0 15px 6px 15px;
+        margin: 30px auto;
+    }
+    .offers__wrapper {
+        max-width: 1315px;
+    }
+    .offers__text {
+    }
+    .text {
+    }
+    .text__offers__header {
+        font-size: 36px;
+    }
+    .text__offers__title {
+        font-size: 12px;
+    }
+    .offers__items {
+        display: flex;
+        flex-direction: column;
+    }
+    .items__left {
+        height: 100%;
+        /* flex: 0 1 50%; */
+        width: 100%;
+    }
+    .items__watch {
+        margin-top: 30px;
+    }
+    .items__right {
+        margin-top: 30px;
+    }
 }
 .footer {
 }

@@ -19,10 +19,11 @@ const mobileMenuButton = document.querySelectorAll('.menu__mobile');
 const modal = document.querySelector('.modal__window__container');
 const modalList = document.querySelectorAll('.modal__item');
 const modalLink = document.querySelectorAll('.modal__link');
-
-
+const swiperControls = document.querySelector('.swiper-controls');
+console.log(swiperControls);
 document.querySelector('.menu__mobile').addEventListener('click', function(){
     modal.classList.remove("hidden");
+    swiperControls.classList.add("hidden");
     let i = 0;
     let id = setInterval(() => {   
         modalList[i].classList.remove("hidden__list"); 
@@ -40,6 +41,7 @@ document.querySelector('.menu__mobile').addEventListener('click', function(){
 
 document.querySelector('.menu__close').addEventListener('click', function(){
     modal.classList.add("hidden");
+    swiperControls.classList.remove("hidden");
     let i = 3;
     let id = setInterval(() => {   
         modalList[i].classList.add("hidden__list"); 
