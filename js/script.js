@@ -20,7 +20,21 @@ const modal = document.querySelector('.modal__window__container');
 const modalList = document.querySelectorAll('.modal__item');
 const modalLink = document.querySelectorAll('.modal__link');
 const swiperControls = document.querySelector('.swiper-controls');
-console.log(swiperControls);
+const heightElem = document.querySelectorAll('.items__wrapper');
+let maxHeight;
+
+for(let i = 0; i < heightElem.length; i++){
+    maxHeight = heightElem[i].offsetHeight;
+    if(maxHeight < heightElem[i].offsetHeight){
+        maxHeight = heightElem[i].offsetHeight;
+    }
+}
+for(let i = 0; i < heightElem.length; i++){
+    //heightElem[i].style.height = maxHeight + 'px';
+}
+console.log(maxHeight);
+
+
 document.querySelector('.menu__mobile').addEventListener('click', function(){
     modal.classList.remove("hidden");
     swiperControls.classList.add("hidden");

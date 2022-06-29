@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-style: normal;
 }
 body{
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     overflow-x: hidden;
 }
 .wrapper{
@@ -1043,5 +1043,129 @@ body{
         margin-top: 30px;
     }
 }
+
+.most__selled {
+    max-width: 1315px;
+    padding: 0 15px 6px 15px;
+    margin: 30px auto;
+}
+.most__selled__wrapper {
+    max-width: 1315px;
+    
+}
+.most__selled__items {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.items__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    max-height: 500px;
+}
+.items__image {
+    padding: 28px;
+    padding-bottom: 5px;
+    width: 100%;
+    object-fit: cover;
+}
+.items__name {
+    font-family: 'Readex Pro';
+    font-size: 22px;
+    line-height: 125%;
+    width: 100%;
+    padding-bottom: 9px;
+}
+.items__description {
+    font-family: 'Inter';
+    font-size: 14px;
+    width: 100%;
+    line-height: 120%;
+    padding-bottom: 25px;
+    flex: 1 1 auto;
+}
+.items__price {
+    font-family: 'Inter';
+    font-size: 18px;
+    width: 100%;
+    line-height: 120%;
+}
+.ipad__text{
+    display: flex;
+}
+
+@media (max-width: 1072.98px) {
+    .items__name {
+        font-size: 20px;
+    }
+    .items__description {
+        font-size: 14px;
+    }
+}
+@media (max-width: 982.98px) {
+    .items__name {
+        font-size: 18px;
+    }
+    .items__description {
+        font-size: 12px;
+    }
+}
+@media (max-width: 900.98px) {
+    .items__name {
+        font-size: 16px;
+    }
+    .items__description {
+        font-size: 12px;
+    }
+    .items__price {
+        font-size: 17px;
+    }
+}
+@media (max-width: 814.98px) {
+    .items__name {
+        font-size: 15px;
+    }
+    .items__description {
+        font-size: 11px;
+    }
+    .items__price {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 770.98px) {
+    .items__name {
+        font-size: 14px;
+    }
+    .items__description {
+        font-size: 12px;
+    }
+    .items__price {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768.98px) {
+    .most__selled__items {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 694.98px) {
+    .most__selled__items {
+        justify-content: center;
+    }
+    .items__name {
+        text-align: center;
+    }
+    .items__description {
+        text-align: center;
+    }
+    .items__price {
+        text-align: center;
+    }
+}
+
 .footer {
 }
