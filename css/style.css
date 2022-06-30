@@ -1167,5 +1167,265 @@ body{
     }
 }
 
+.best {
+    max-width: 1315px;
+    padding: 0 15px 6px 15px;
+    margin: 30px auto;
+}
+.best__wrapper {
+    max-width: 1315px;
+}
+.best__item__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.item__wrapper{
+    display: flex;
+    flex-direction: column;
+    background: #F8F9FA;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+.item__text__wrapper {
+    padding: 30px 0;
+    justify-content: center;
+    flex: 0 1 50%;
+    width: 100%;
+    height: 100%;
+}
+.description__text {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 129%;
+    width: 100%;
+    text-align: center;
+}
+.header__text {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 125%;
+    text-align: center;
+    width: 100%;
+}
+#button_2{
+    justify-content: center;
+}
+.item__img__wrapper {
+    width: 100%;
+    height: 100%;
+    flex: 0 1 100%;
+    object-fit:cover;
+}
+.card__image {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+#watch{
+    max-width: 259px;
+    max-height: 250px;
+}
+#allgadgets{
+    max-width: 294px;
+    max-height: 250px;
+}
+#note_iphone{
+    max-width: 355px;
+    max-height: 250px;
+}
+.best__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    max-height: 500px;
+}
+.best__image {
+    padding-bottom: 5px;
+    width: 100%;
+    object-fit: cover;
+}
+.best__name {
+    font-family: 'Readex Pro';
+    font-size: 22px;
+    line-height: 125%;
+    width: 100%;
+    padding-bottom: 9px;
+    text-align: center;
+}
+.best__description {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 129%;
+    width: 100%;
+    flex: 1 1 auto;
+    text-align: center;
+}
+.best__button {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 125%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.best__items{
+    padding-top: 41px;
+}
+#latest_gratest{
+    padding: 0 54.5px;
+    background: #F8F9FA;
+    justify-content: center;
+    border-radius: 16px;
+}
+#best_selling{
+    padding: 0 37px;
+    background: #F8F9FA;
+    border-radius: 16px;
+}
+#every_product{
+    background: #F8F9FA;
+    border-radius: 16px;
+}
+.best__button__link{
+    padding: 10px 45px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-family: 'Readex Pro';
+    font-size: 18px;
+    color: #000;
+}
+#fast{
+    display: flex;
+}
+
+@media (max-width: 984.98px) {
+    .best__name {
+        font-size: 20px;
+    }
+    .best__description {
+        font-size: 12px;
+    }
+    .best__button {
+        font-size: 25px;
+    }
+}
+@media (max-width: 884.98px) {
+    .best__name {
+        font-size: 18px;
+    }
+    .best__description {
+        font-size: 10px;
+    }
+    .best__button {
+        font-size: 22px;
+    }
+    .best__button__link{
+        padding: 5px 30px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 884.98px) {
+    .best__name {
+        font-size: 15px;
+    }
+    .best__description {
+        font-size: 8px;
+    }
+    .best__button {
+        font-size: 16px;
+    }
+    .best__button__link{
+        padding: 5px 30px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 768.98px) {
+    .best__name {
+        font-size: 15px;
+    }
+    .best__description {
+        font-size: 8px;
+    }
+    .best__button {
+        font-size: 16px;
+    }
+    .best__button__link{
+        padding: 5px 30px;
+        font-size: 12px;
+    }
+    #latest_gratest {
+        padding: 0 41.5px;
+    }
+}
+@media (max-width: 700.98px) {
+    .best__name {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 613.98px) {
+    #latest_gratest {
+        padding: 0 34.5px;
+    }
+    
+}
+@media (max-width: 550.98px) {
+    #latest_gratest {
+        padding: 0 28.5px;
+    }
+    
+}
+@media (max-width: 530.98px) {
+    .best__item__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .best__image {
+        padding-bottom: 5px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .best__name {
+        font-family: 'Readex Pro';
+        font-size: 22px;
+        line-height: 125%;
+        width: 100%;
+        padding-bottom: 9px;
+        text-align: center;
+    }
+    .best__description {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 129%;
+        width: 100%;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    .best__button {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 125%;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
 .footer {
 }
