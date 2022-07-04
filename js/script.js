@@ -21,19 +21,8 @@ const modalList = document.querySelectorAll('.modal__item');
 const modalLink = document.querySelectorAll('.modal__link');
 const swiperControls = document.querySelector('.swiper-controls');
 const heightElem = document.querySelectorAll('.items__wrapper');
-let maxHeight;
-
-for(let i = 0; i < heightElem.length; i++){
-    maxHeight = heightElem[i].offsetHeight;
-    if(maxHeight < heightElem[i].offsetHeight){
-        maxHeight = heightElem[i].offsetHeight;
-    }
-}
-for(let i = 0; i < heightElem.length; i++){
-    //heightElem[i].style.height = maxHeight + 'px';
-}
-console.log(maxHeight);
-
+const buttonValue = document.querySelectorAll('.else__fastsearch_button');
+const searchInput = document.querySelector('.search__input');
 
 document.querySelector('.menu__mobile').addEventListener('click', function(){
     modal.classList.remove("hidden");
@@ -50,9 +39,6 @@ document.querySelector('.menu__mobile').addEventListener('click', function(){
     i = 0;
 });
 
-
-
-
 document.querySelector('.menu__close').addEventListener('click', function(){
     modal.classList.add("hidden");
     swiperControls.classList.remove("hidden");
@@ -68,4 +54,12 @@ document.querySelector('.menu__close').addEventListener('click', function(){
         }
     }, 200);
     i = 3;
+});
+
+function addNum(el) {
+    searchInput.value = el.textContent;
+}
+
+buttonValue.forEach(div => { 
+      div.addEventListener('click', () => addNum(div));
 });
