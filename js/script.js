@@ -23,6 +23,9 @@ const swiperControls = document.querySelector('.swiper-controls');
 const heightElem = document.querySelectorAll('.items__wrapper');
 const buttonValue = document.querySelectorAll('.else__fastsearch_button');
 const searchInput = document.querySelector('.search__input');
+const list = document.querySelectorAll('.list__items');
+const content = document.querySelectorAll('.content');
+const availableScreenWidth = window.screen.availWidth;
 
 document.querySelector('.menu__mobile').addEventListener('click', function(){
     modal.classList.remove("hidden");
@@ -59,6 +62,33 @@ document.querySelector('.menu__close').addEventListener('click', function(){
 function addNum(el) {
     searchInput.value = el.textContent;
 }
+window.addEventListener("resize", function() {
+    if (window.matchMedia("(max-width: 975px)").matches) {
+        for(let i = 0; i < content.length; i++){
+            content[i].style.maxHeight = null;
+           }
+           let coll = document.querySelectorAll(".collapsible");
+        for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+}
+    } else {
+        for(let i = 0; i < content.length; i++){
+            content[i].style.maxHeight = "147" + "px";
+           }
+    }
+});
+
+
+
+
 
 buttonValue.forEach(div => { 
       div.addEventListener('click', () => addNum(div));

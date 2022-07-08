@@ -190,7 +190,7 @@ body{
     align-items: center;
 }
 .button__icon {
-    padding: 0 22.5px;
+    padding: 0 22.5px 5px 22.5px;
     background-image: linear-gradient(#000, #000);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -1631,8 +1631,8 @@ body{
     width: 100%;
     max-width: 935px;
     background-color: #DCE5E2;
-    border-radius: 30px;
-    padding-bottom: 43px;
+    border-radius: 16px;
+    padding: 0 15px 43px 15px;
 }
 .never__image {
     display: flex;
@@ -1679,6 +1679,7 @@ body{
     background: #F8F9FA;
     display: flex;
     justify-content: center;
+    min-width: 400px;
 }
 .footer__wrapper {
     max-width: 1315px;
@@ -1723,7 +1724,23 @@ body{
     color: #000000;
     padding: 7.5px 0;
 }
-.list__items:first-child {
+
+.footer__link{
+    background-image: linear-gradient(#000, #000);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color:#000;
+    padding: 5px 0;
+}
+.footer__link:hover{
+    background-size: 100% 2px;
+}
+.footer__link:visited{
+    color:#000;
+}
+.list__button{
     font-family: 'Readex Pro';
     font-style: normal;
     font-weight: 400;
@@ -1731,6 +1748,7 @@ body{
     line-height: 125%;
     color: #000000;
     padding-bottom: 4px;
+    background-color: #F8F9FA;
 }
 .items__contacts {
     display: flex;
@@ -1752,4 +1770,69 @@ body{
     font-size: 18px;
     line-height: 120%;
     color: #000000;
+}
+ .collapsible{
+    background-color: #F8F9FA;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: 'Readex Pro';
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 125%;
+    padding-bottom: 4px;
+    background-color: #F8F9FA;
+}
+.collap__img{
+    padding-left: 5px;
+    display: none;
+}  
+.active, .collapsible:hover{
+    background-color: #F8F9FA;
+}
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #000;
+    background-color: #F8F9FA;
+}
+
+@media (max-width: 974.98px){
+    .items__logo{
+        justify-content: center;
+    }
+    .items__text{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .logo__icon{
+        display: flex;
+        justify-content: center;
+    }
+    .items__list{
+        flex-direction: column;
+    }
+    .list__items{
+        text-align: center;
+    }
+    .collapsible{
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .items__contacts{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contacts__madeBy{
+        padding: 10px 0;
+    }
+    .collap__img{
+        display: flex;
+    }  
 }
