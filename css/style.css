@@ -88,6 +88,13 @@ body{
         max-width: none;
     }
 } */
+img{
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none
+}
 .header {
     width: 100%;
     top: 0;
@@ -124,6 +131,7 @@ body{
 }
 .menu__mobile{
     display: none;
+    cursor: pointer;
 }
 
 .menu__input {
@@ -273,6 +281,7 @@ body{
     justify-content: flex-end;
     max-height: 36px;
     flex-grow: 1;
+    cursor: pointer;
 }
 .close__icon {
     width: 36px;

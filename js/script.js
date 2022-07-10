@@ -106,6 +106,10 @@ window.addEventListener("resize", function() {
 
 search.addEventListener('click', function(){
     availableScreenWidth = window.screen.availWidth;
+    outerScreenWidth = window.outerWidth;
+    if(outerScreenWidth < 1136){
+        headerMenu.classList.toggle("logo__hidden");
+    }
     if(availableScreenWidth < 1136){
         headerMenu.classList.toggle("logo__hidden");
     }
